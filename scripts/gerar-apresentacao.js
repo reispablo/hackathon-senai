@@ -285,16 +285,26 @@ addTitleBullets("Justificativa", "Por que realizar o hackathon", [
     ["08:00 - 08:20", "Abertura e apresentação do desafio"],
     ["08:20 - 10:20", "Modelagem e prototipagem em papel"],
     ["10:20 - 10:35", "Coffee break"],
-    ["10:35 - 14:35", "Desenvolvimento da solução"],
+    ["10:35 - 11:15", "Início do desenvolvimento"],
+    ["11:15 - 11:25", "Janela IA #1"],
+    ["11:25 - 12:05", "Desenvolvimento sem IA"],
+    ["12:05 - 12:15", "Janela IA #2"],
+    ["12:15 - 12:30", "Desenvolvimento e ajustes"],
     ["12:30 - 13:10", "Almoço"],
+    ["13:10 - 13:40", "Retomada do desenvolvimento"],
+    ["13:40 - 13:50", "Janela IA #3"],
+    ["13:50 - 14:15", "Correções e integração"],
+    ["14:15 - 14:25", "Janela IA #4"],
+    ["14:25 - 14:35", "Fechamento da Fase 2"],
     ["14:35 - 15:00", "Preparação do pitch"],
     ["15:00 - 16:00", "Pitch e avaliação final"]
   ];
   rows.forEach((row, index) => {
-    const y = 1.38 + index * 0.66;
-    slide.addText(row[0], { x: 1.0, y, w: 1.75, h: 0.28, color: blue, fontSize: 12, bold: true, margin: 0 });
-    slide.addText(row[1], { x: 3.0, y, w: 8.6, h: 0.28, color: white, fontSize: 12.4, margin: 0 });
-    slide.addShape(pptx.ShapeType.line, { x: 0.95, y: y + 0.42, w: 10.95, h: 0, line: { color: line, transparency: 68 } });
+    const y = 1.24 + index * 0.37;
+    const isAi = row[1].includes("IA");
+    slide.addText(row[0], { x: 0.95, y, w: 1.7, h: 0.22, color: isAi ? orange : blue, fontSize: 9.3, bold: true, margin: 0 });
+    slide.addText(row[1], { x: 2.9, y, w: 8.8, h: 0.22, color: white, fontSize: 9.8, margin: 0 });
+    slide.addShape(pptx.ShapeType.line, { x: 0.95, y: y + 0.29, w: 10.95, h: 0, line: { color: line, transparency: 74 } });
   });
   footer(slide);
 }

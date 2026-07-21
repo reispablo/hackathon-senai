@@ -72,14 +72,20 @@ Cada equipe deverá apresentar:
 
 - 08:00 - 08:20: abertura e apresentação do desafio.
 - 08:20 - 10:20: modelagem e prototipagem em papel.
-- 10:35 - 14:35: desenvolvimento da solução.
+- Coffee break: 10:20 - 10:35.
+- 10:35 - 11:15: início do desenvolvimento da solução.
+- 11:15 - 11:25: janela IA #1.
+- 11:25 - 12:05: desenvolvimento sem uso de IA.
+- 12:05 - 12:15: janela IA #2.
+- 12:15 - 12:30: desenvolvimento e ajustes.
+- Almoço: 12:30 - 13:10.
+- 13:10 - 13:40: retomada do desenvolvimento e testes.
+- 13:40 - 13:50: janela IA #3.
+- 13:50 - 14:15: correções, integração e refinamentos.
+- 14:15 - 14:25: janela IA #4.
+- 14:25 - 14:35: fechamento da Fase 2.
 - 14:35 - 15:00: preparação do pitch.
 - 15:00 - 16:00: apresentação e avaliação final.
-
-Intervalos previstos:
-
-- Coffee break: 10:20 - 10:35.
-- Almoço: 12:30 - 13:10.
 
 ## 10. Uso de Inteligência Artificial
 

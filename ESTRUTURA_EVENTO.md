@@ -88,12 +88,17 @@ A solução pode contemplar recursos como:
 - 08:00 - 08:20: Abertura, boas-vindas, regras e apresentação do desafio.
 - 08:20 - 10:20: Fase 1 - Modelagem, prototipagem em papel e planejamento.
 - 10:20 - 10:35: Coffee break.
-- 10:35 - 14:35: Fase 2 - Desenvolvimento do sistema.
+- 10:35 - 11:15: Fase 2 - Início do desenvolvimento.
 - 11:15 - 11:25: Janela IA #1.
+- 11:25 - 12:05: Desenvolvimento sem uso de IA.
 - 12:05 - 12:15: Janela IA #2.
+- 12:15 - 12:30: Desenvolvimento e ajustes antes do almoço.
 - 12:30 - 13:10: Almoço.
+- 13:10 - 13:40: Retomada do desenvolvimento e testes.
 - 13:40 - 13:50: Janela IA #3.
+- 13:50 - 14:15: Correções, integração e refinamentos.
 - 14:15 - 14:25: Janela IA #4.
+- 14:25 - 14:35: Fechamento da Fase 2.
 - 14:35 - 15:00: Preparação do pitch.
 - 15:00 - 16:00: Pitch e avaliação final.
 

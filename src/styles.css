@@ -366,7 +366,7 @@ strong,
   top: 19px;
   bottom: 24px;
   width: 3px;
-  background: linear-gradient(var(--blue), var(--blue) 43%, var(--orange) 43%, var(--orange) 75%, var(--blue) 75%);
+  background: linear-gradient(var(--blue), rgba(16, 141, 255, 0.45));
 }
 
 .timeline-item {
