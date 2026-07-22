@@ -245,11 +245,11 @@ strong,
   font-size: 1rem;
 }
 
-.content-grid,
-.bottom-grid {
+.content-grid {
   display: grid;
   grid-template-columns: 1.02fr 1fr;
   gap: 22px;
+  align-items: stretch;
 }
 
 .project-structure {
@@ -320,18 +320,31 @@ strong,
   line-height: 1.35;
 }
 
-.bottom-grid {
-  margin-top: 28px;
-}
-
 .right-stack {
   display: grid;
   gap: 22px;
+  grid-template-rows: 1fr 1.05fr 0.95fr 1fr;
+  align-content: stretch;
+  align-self: stretch;
+  height: 100%;
 }
 
 .panel {
   border-radius: 11px;
   padding: 22px 26px;
+}
+
+.right-stack .panel {
+  display: flex;
+  flex-direction: column;
+}
+
+.right-stack .challenge-flow,
+.right-stack .tech-grid,
+.right-stack .ai-grid,
+.right-stack .deliverable-grid {
+  margin-top: auto;
+  margin-bottom: auto;
 }
 
 .section-title {
@@ -646,6 +659,10 @@ strong,
   max-width: 128px;
 }
 
+.scoring {
+  margin-top: 22px;
+}
+
 .scoring h2 span {
   font-weight: 500;
   font-size: 1rem;
@@ -653,8 +670,8 @@ strong,
 
 .score-grid {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 13px 28px;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 13px 34px;
 }
 
 .score-grid article {
@@ -721,8 +738,7 @@ footer::first-letter {
 
   .info-strip,
   .structure-grid,
-  .content-grid,
-  .bottom-grid {
+  .content-grid {
     grid-template-columns: 1fr;
   }
 
