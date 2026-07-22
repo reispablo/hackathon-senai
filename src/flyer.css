@@ -319,8 +319,141 @@ h2::after {
 
   .flyer {
     width: 210mm;
-    min-height: 297mm;
+    height: 297mm;
+    min-height: 0;
     border: 0;
     box-shadow: none;
+  }
+
+  .hero {
+    min-height: 82mm;
+    padding: 8mm 11mm;
+  }
+
+  .brand {
+    top: 8mm;
+    left: 11mm;
+    width: 48mm;
+    height: 18mm;
+    font-size: 2.45rem;
+  }
+
+  .hero h1 {
+    max-width: 140mm;
+    font-size: 3.35rem;
+  }
+
+  .hero-copy > p:last-child {
+    max-width: 135mm;
+    margin-top: 3mm;
+    font-size: 1.08rem;
+  }
+
+  .kicker {
+    margin-bottom: 3mm;
+    padding: 2mm 3mm;
+    font-size: 0.78rem;
+  }
+
+  .quick-info {
+    margin: -4mm 11mm 5mm;
+  }
+
+  .quick-info article {
+    min-height: 20mm;
+    padding: 3mm 4mm;
+  }
+
+  .quick-info svg {
+    width: 9mm;
+    height: 9mm;
+  }
+
+  .quick-info strong {
+    font-size: 0.7rem;
+  }
+
+  .quick-info span {
+    font-size: 1rem;
+  }
+
+  .intro,
+  .cards,
+  .schedule,
+  .cta {
+    margin-inline: 11mm;
+  }
+
+  .intro {
+    margin-bottom: 4mm;
+  }
+
+  .intro p {
+    font-size: 0.92rem;
+  }
+
+  .cards {
+    gap: 3mm;
+    margin-bottom: 5mm;
+  }
+
+  .cards article {
+    min-height: 34mm;
+    padding: 4mm;
+  }
+
+  .cards svg {
+    width: 9mm;
+    height: 9mm;
+    margin-bottom: 3mm;
+  }
+
+  .cards h3 {
+    margin-bottom: 2mm;
+    font-size: 0.84rem;
+  }
+
+  .cards p {
+    font-size: 0.78rem;
+    line-height: 1.3;
+  }
+
+  .schedule {
+    padding: 4mm 7mm;
+    margin-bottom: 5mm;
+  }
+
+  .schedule-grid {
+    grid-template-columns: 20mm 1fr;
+    gap: 2mm 5mm;
+  }
+
+  .schedule-grid span {
+    padding: 1.4mm 2mm;
+    font-size: 0.82rem;
+  }
+
+  .schedule-grid p {
+    font-size: 0.83rem;
+  }
+
+  .cta {
+    min-height: 24mm;
+    padding: 4mm 7mm;
+  }
+
+  .badge {
+    min-height: 19mm;
+    font-size: 0.82rem;
+  }
+
+  h2 {
+    margin-bottom: 3mm;
+    font-size: 1.22rem;
+  }
+
+  h2::after {
+    width: 16mm;
+    margin-left: 4mm;
   }
 }
