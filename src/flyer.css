@@ -124,7 +124,7 @@ body {
 
 .quick-info {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(4, 1fr);
   margin: -20px 42px 28px;
   position: relative;
   z-index: 2;
@@ -138,8 +138,8 @@ body {
   min-height: 104px;
   display: flex;
   align-items: center;
-  gap: 14px;
-  padding: 20px;
+  gap: 10px;
+  padding: 16px 12px;
   border-right: 1px solid rgba(16, 141, 255, 0.25);
 }
 
@@ -148,8 +148,8 @@ body {
 }
 
 .quick-info svg {
-  width: 38px;
-  height: 38px;
+  width: 32px;
+  height: 32px;
   color: var(--blue);
   flex: 0 0 auto;
 }
@@ -165,7 +165,7 @@ body {
 .quick-info span {
   display: block;
   color: #ddecff;
-  font-size: 1.22rem;
+  font-size: 1.03rem;
   font-weight: 700;
 }
 
@@ -275,7 +275,7 @@ h2::after {
 
 .cta {
   display: grid;
-  grid-template-columns: 1fr 190px;
+  grid-template-columns: 1fr 132px;
   align-items: center;
   gap: 24px;
   padding: 24px 28px;
@@ -292,18 +292,42 @@ h2::after {
   font-size: 1.08rem;
 }
 
-.badge {
-  display: grid;
-  place-items: center;
-  min-height: 116px;
-  border-radius: 10px;
-  background: linear-gradient(145deg, #ff8325, #a64308);
-  color: #fff;
-  font-size: 1.08rem;
+.cta .cta-kicker {
+  margin-bottom: 5px;
+  color: #ff9a55;
+  font-size: 0.82rem;
   font-weight: 900;
-  line-height: 1.45;
-  text-align: center;
+  letter-spacing: 0.08em;
   text-transform: uppercase;
+}
+
+.cta a:not(.registration-qr) {
+  display: inline-block;
+  margin-top: 10px;
+  color: #fff;
+  font-size: 0.83rem;
+  font-weight: 800;
+  text-decoration-color: var(--orange);
+  text-underline-offset: 3px;
+}
+
+.registration-qr {
+  display: grid;
+  justify-items: center;
+  gap: 5px;
+  color: #fff;
+  font-size: 0.72rem;
+  font-weight: 800;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.registration-qr img {
+  width: 104px;
+  height: 104px;
+  padding: 5px;
+  border-radius: 8px;
+  background: #fff;
 }
 
 @media print {
@@ -361,12 +385,13 @@ h2::after {
 
   .quick-info article {
     min-height: 20mm;
-    padding: 3mm 4mm;
+    gap: 2mm;
+    padding: 3mm 2.5mm;
   }
 
   .quick-info svg {
-    width: 9mm;
-    height: 9mm;
+    width: 7mm;
+    height: 7mm;
   }
 
   .quick-info strong {
@@ -374,7 +399,7 @@ h2::after {
   }
 
   .quick-info span {
-    font-size: 1rem;
+    font-size: 0.84rem;
   }
 
   .intro,
@@ -442,9 +467,13 @@ h2::after {
     padding: 4mm 7mm;
   }
 
-  .badge {
-    min-height: 19mm;
-    font-size: 0.82rem;
+  .registration-qr img {
+    width: 25mm;
+    height: 25mm;
+  }
+
+  .registration-qr {
+    font-size: 0.6rem;
   }
 
   h2 {

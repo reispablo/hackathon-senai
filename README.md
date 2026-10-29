@@ -15,6 +15,7 @@ Desenvolver uma solução tecnológica inovadora que conecte clientes e profissi
 ## Conteúdo do Repositório
 
 - `index.html`: página principal do projeto.
+- `flyer.html`: flyer A4 com chamada e QR Code para inscrição.
 - `src/styles.css`: estilos da landing page.
 - `src/main.js`: dados editáveis do cronograma e critérios de avaliação.
 - `src/assets/reference.png`: imagem de referência usada no layout.
@@ -75,6 +76,16 @@ O arquivo será gerado como:
 ```text
 apresentacao-aprovacao-hackathon-senai-2026.pptx
 ```
+
+## Gerar o Flyer em PDF
+
+Para criar a versão A4 pronta para impressão:
+
+```bash
+npm run flyer:pdf
+```
+
+O arquivo principal será gerado em `export/flyer-hackathon-senai-2026.pdf`.
 
 ## Escopo do Hackathon
 
